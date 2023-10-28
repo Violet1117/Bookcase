@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>确认</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="/index">首页</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/">借书</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/">还书</a>
+            </li>
+        </ul>
+    </nav>
+    <center>
+        <h1>请确认你的清单:</h1>
+        <h3>执行的操作:<a class="text-warning">{{sign}}</a></h3>
+        <h3>{{sign}}的对象:<a class="text-danger">书籍《{{checkname}}》</a></h3>
+        <h3>执行操作的账户:<a class="text-success">{{username}}</a></h3>
+    </center>
+</body>
+</html>
